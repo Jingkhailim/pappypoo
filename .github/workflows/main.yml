@@ -2,7 +2,7 @@ name: Scrape API, Fetch Weather, and Update CSV
 
 on:
   schedule:
-    - cron: "*/10 * * * *"
+    - cron: "*/5 * * * *"
 
 jobs:
   run_scrape_and_update:
