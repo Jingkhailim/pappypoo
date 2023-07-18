@@ -2,7 +2,7 @@ name: Scrape API, Fetch Weather, and Update CSV
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   run_scrape_and_update:
@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-            python-version: 3.12.0
+          python-version: 3.10  # Replace with your Python version if necessary
 
       - name: Install dependencies
         run: pip install requests
