@@ -15,18 +15,6 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.10  # Replace with your Python version if necessary
+          python-version: 3.x
 
-      - name: Install dependencies
-        run: pip install requests
-
-      - name: Run Python script
-        run: python test_baby.py
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "Jingkhailim"
-          git config --global user.email "jingkhai.lim@outlook.com"
-          git add .
-          git commit -m "Update CSV file"
-          git push
+      # Rest of your steps...
